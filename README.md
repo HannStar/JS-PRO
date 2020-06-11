@@ -1,2 +1,2 @@
-# js-pro-course
+# Gleb
 My homework
