@@ -19,7 +19,7 @@ function createCounter(initialValue) {
     },
 
     discard() {
-      this.objValue = 0;
+      this.objValue = initialValue;
       console.log(this.objValue);
       return this;
     },
