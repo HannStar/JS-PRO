@@ -1,26 +1,22 @@
-function createCounter(initialValue) {
+function createCounter(initialValue = 0) {
   return {
     objValue: initialValue,
     increment(value = 1) {
       this.objValue += value;
-      console.log(this.objValue);
       return this;
     },
 
     decrement(value = 1) {
       this.objValue -= value;
-      console.log(this.objValue);
       return this;
     },
 
     showValue() {
-      console.log(this.objValue);
       return this;
     },
 
     discard() {
       this.objValue = initialValue;
-      console.log(this.objValue);
       return this;
     },
   };
