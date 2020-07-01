@@ -1,0 +1,168 @@
+body {
+  position: relative;
+  margin: 0;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+header input, header button {
+  width: 10vw;
+  height: 0.7vw;
+  margin: 0 3vw;
+  padding: 1vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 1vw;
+  border-radius: 0.2vw;
+  border: none;
+  outline: none;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.8vw;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+header button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  height: 2.7vw;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #b6c7ff;
+  color: #3f3f3f;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main {
+  width: 40vw;
+  margin: 4vw auto;
+  background-image: url(img/2868031.jpg);
+  background-position: center center;
+  background-size: cover;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 5px 7px 7px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 7px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+main .query {
+  margin: 0 0 6vw;
+  padding: 2vw 2vw 0;
+  font-size: 3vw;
+  font-weight: 600;
+  color: #fff;
+}
+
+main .logo-weather {
+  width: 5vw;
+  height: 5vw;
+  border: 0.2vw solid #cad6ff;
+  border-radius: 1vw;
+}
+
+main .short-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+main .short-info .sky {
+  font-size: 2vw;
+  font-weight: 500;
+  margin: 0;
+  color: #fff;
+}
+
+main .short-info .temperature {
+  font-size: 4vw;
+  margin: 0;
+  color: #fff;
+}
+
+main .short-info .temperature span {
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+main .full-info {
+  width: 40vw;
+  height: 10vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10vw;
+  background-color: white;
+  color: #3f3f3f;
+}
+
+main .full-info .weather-point {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1vw;
+  font-weight: 500;
+}
+
+main .full-info .weather-point .point-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .full-info .weather-point img {
+  width: 3vw;
+  margin-right: 1vw;
+}
+
+main .full-info .weather-point .value {
+  margin: 0;
+  font-size: 2vw;
+}
+
+footer {
+  padding: 1vw;
+  font-size: 0.8vw;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */
