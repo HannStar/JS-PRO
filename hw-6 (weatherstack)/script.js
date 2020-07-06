@@ -1,11 +1,15 @@
 let button = document.getElementById("button");
 
-button.onclick = function () {
-  let nameCountry = document.getElementById("country").value;
-  let nameCity = document.getElementById("city").value;
+let form = document.forms.info;
+
+button.addEventListener("click", getValue);
+
+function getValue() {
+  let nameCountry = form.elements.country;
+  let nameCity = form.elements.city;
 
   fetch(
-    `http://api.weatherstack.com/current?access_key=87083344585d5ba06a482863c069f8e9&query=${nameCity}, ${nameCountry}`
+    `http://api.weatherstack.com/current?access_key=87083344585d5ba06a482863c069f8e9&query=${nameCity.value},${nameCountry.value}`
   )
     .then((resp) => resp.json())
     .then((data) => {
@@ -26,4 +30,4 @@ button.onclick = function () {
       document.getElementById("humidity").textContent = data.current.humidity;
     })
     .catch(() => alert("Verify the data is correct"));
-};
+}
