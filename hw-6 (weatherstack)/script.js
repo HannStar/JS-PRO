@@ -14,20 +14,31 @@ function getValue() {
     .then((resp) => resp.json())
     .then((data) => {
       console.log(data);
-      document.querySelector(".query").textContent = data.request.query;
+      let current = data.current;
+      let [query, icon, desciption, temp, windSpeed, precip, humidity] = [
+        data.request.query,
+        current.weather_icons[0],
+        current.weather_descriptions[0],
+        current.temperature,
+        current.wind_speed,
+        current.precip,
+        current.humidity,
+      ];
+      document.querySelector(".query").textContent = query;
 
-      document.querySelector(".logo-weather").src =
-        data.current.weather_icons[0];
+      document.querySelector(".logo-weather").src = icon;
 
-      document.querySelector(".sky").textContent =
-        data.current.weather_descriptions[0];
+      document.querySelector(".sky").textContent = desciption;
 
-      document.querySelector(".temperature > span").textContent =
-        data.current.temperature;
+      document.querySelector(".temperature > span").textContent = temp;
 
-      document.getElementById("wind").textContent = data.current.wind_speed;
-      document.getElementById("precip").textContent = data.current.precip;
-      document.getElementById("humidity").textContent = data.current.humidity;
+      document.getElementById("wind").textContent = windSpeed;
+
+      document.getElementById("precip").textContent = precip;
+
+      document.getElementById("humidity").textContent = humidity;
     })
     .catch(() => alert("Verify the data is correct"));
 }
+
+let content = {};
