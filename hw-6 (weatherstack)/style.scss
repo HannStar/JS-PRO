@@ -1,0 +1,123 @@
+body {
+  position: relative;
+  margin: 0;
+  background-image: url(img/background.jpg);
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+
+%stack-input {
+  width: 10vw;
+  height: 0.7vw;
+  margin: 0 3vw;
+  padding: 1vw;
+  font-family: "Roboto", sans-serif;
+  font-size: 1vw;
+  border-radius: 0.2vw;
+  border: none;
+  outline: none;
+}
+header {
+  padding: 0.8vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  form {
+    display: flex;
+    justify-content: center;
+    input {
+      @extend %stack-input;
+    }
+    button {
+      @extend %stack-input;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+      height: 2.7vw;
+      cursor: pointer;
+      &:hover {
+        background-color: #b6c7ff;
+        color: #3f3f3f;
+        transition: 0.5s;
+      }
+    }
+  }
+}
+
+main {
+  width: 40vw;
+  margin: 2vw auto;
+  background-image: url(img/2868031.jpg);
+  background-position: center center;
+  background-size: cover;
+  box-sizing: border-box;
+  box-shadow: 0.3vw 0.3vw 0.3vw 0.1vw rgba(0, 0, 0, 0.2);
+  .query {
+    margin: 0 0 4vw;
+    padding: 1vw 2vw 0;
+    font-size: 3vw;
+    font-weight: 600;
+    color: #fff;
+  }
+  .logo-weather {
+    width: 5vw;
+    height: 5vw;
+    border: 0.2vw solid #cad6ff;
+    border-radius: 1vw;
+  }
+  .short-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    .sky {
+      font-size: 2vw;
+      font-weight: 500;
+      margin: 0;
+      color: #fff;
+    }
+    .temperature {
+      font-size: 4vw;
+      margin: 0;
+      color: #fff;
+      span {
+        font-size: 5vw;
+        font-weight: 600;
+      }
+    }
+  }
+  .full-info {
+    width: 40vw;
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4vw;
+    background-color: rgba(255, 255, 255, 1);
+    color: #3f3f3f;
+    .weather-point {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-size: 1vw;
+      font-weight: 500;
+      .point-name {
+        display: flex;
+        align-items: center;
+      }
+      img {
+        width: 3vw;
+        margin-right: 1vw;
+      }
+      .value {
+        margin: 0;
+        font-size: 2vw;
+      }
+    }
+  }
+}
+
+footer {
+  padding: 1vw;
+  font-size: 0.8vw;
+  text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="" />
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+      <header>
+          <form name="info">
+            <input type="text" name="city" placeholder="City">
+            <input type="text" name="country" placeholder="Country">
+            <button type=button action="#" id="button" onsubmit="return false">Submit</button>
+          </form>
+      </header>
+      <main>
+          <p class="query">
+              Minsk, Belarus
+          </p>
+          <div class="short-info">
+              <img class="logo-weather" src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0002_sunny_intervals.png" alt="">
+              <p class="sky">Sunny</p>
+              <p class="temperature"><span>12</span>°</p>
+          </div>
+            <div class="full-info">
+                <div class="weather-point">
+                    <div class="point-name">
+                        <img src="img/wind.png" alt="">
+                        <p>Wind</p>
+                    </div>
+                    <p class="value"><span id="wind">21</span> kmph</p>
+                </div>
+                <div class="weather-point">
+                    <div class="point-name">
+                        <img src="img/precip.png" alt="">
+                        <p>Precip</p>
+                    </div>
+                    <p class="value"><span id="precip">0.1</span> mm</p>
+                </div>    
+                <div class="weather-point">
+                    <div class="point-name">
+                        <img src="img/humidity.png" alt="">
+                        <p>Humidity</p>
+                    </div>
+                        <p class="value"><span id="humidity">72</span> %</p>
+                </div>
+            </div>                     
+      </main>
+      <footer>
+        &copy; Gleb Kvarternikov
+      </footer>
+      <script src="script.js"></script>
+  </body>
+</html>
